@@ -91,3 +91,13 @@ header h1 a {
 .site-banner--kamakoti img {
   max-height: 140px;
 }
+
+h4 {
+  color: #663300;
+  text-align: center;
+}
+
+h2 {
+  color: #663300;
+  text-align: center;
+}
