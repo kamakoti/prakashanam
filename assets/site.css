@@ -105,6 +105,15 @@ header h1 a {
   text-align: center;
 }
 
+.post-content h1 {
+  color: hsl(250, 100%, 20%);
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+  line-height: 1.25;
+  text-align: center;
+}
+
+
 .post-content h3 {
   color: #663300;
   margin-top: 0.8em;
@@ -121,4 +130,8 @@ header h1 a {
 
 .post-content em {
   font-style: italic;
+}
+
+.post-content pranam{
+    text-align: center;
 }
