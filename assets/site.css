@@ -97,13 +97,27 @@ header h1 a {
   max-height: 140px;
 }
 
-h4 {
+.post-content h2 {
+  color: #663300;
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+  line-height: 1.15;
+}
+
+.post-content h3 {
+  color: #663300;
+  margin-top: 0.8em;
+}
+
+.post-content h4 {
   color: #663300;
   text-align: center;
 }
 
-h2 {
-  color: #663300;
-  text-align: center;
-  margin: 1rem 0;
+.post-content p {
+  max-width: 65ch;
+}
+
+.post-content em {
+  font-style: italic;
 }
