@@ -1,0 +1,32 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 2rem auto;
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #663300;
+}
+
+.script-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 12px;
+  margin: 1.5rem 0;
+}
+
+.script-cell {
+  text-align: center;
+}
+
+.script-cell img {
+  width: 75px;
+  height: 75px;
+}
+
+.cover {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,23 @@
+scripts:
+  - key: devanagari-eng
+    img: dng-en.png
+  - key: devanagari-tam
+    img: dng-tam.png
+  - key: grantha
+    img: grantha.png
+  - key: tamilgrantha
+    img: tamil-grantha.png
+  - key: tamil
+    img: tamil.png
+  - key: telugu
+    img: telugu.png
+  - key: hindi
+    img: hindi.png
+  - key: kannada
+    img: kannada.png
+  - key: malayalam
+    img: malayalam.png
+  - key: sharada
+    img: sharada.png
+  - key: sarva
+    img: sarva.png

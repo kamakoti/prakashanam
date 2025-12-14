@@ -1,0 +1,18 @@
+{%- assign raw = "https://raw.githubusercontent.com/kamakoti/prakashanam/main" -%}
+{%- assign tree = "https://github.com/kamakoti/prakashanam/tree/main" -%}
+
+<div class="script-grid">
+{% for s in site.data.scripts.scripts %}
+  {% if s.key == "sarva" %}
+    {% assign url = tree | append: "/" | append: include.parent | append: "/" | append: include.folder %}
+  {% else %}
+    {% assign url = raw | append: "/" | append: include.parent | append: "/" | append: include.folder | append: "/" | append: include.folder | append: "-" | append: s.key | append: ".pdf" %}
+  {% endif %}
+
+  <div class="script-cell">
+    <a href="{{ url }}" target="_blank">
+      <img src="{{ '/assets/icons/' | append: s.img | relative_url }}">
+    </a>
+  </div>
+{% endfor %}
+</div>

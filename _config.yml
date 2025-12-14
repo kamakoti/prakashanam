@@ -1,0 +1,8 @@
+title: Kamakoti Prakashanam
+description: Publications from Kamakoti and VDSP
+markdown: kramdown
+
+# Ensure Jekyll ignores large folders it doesn't need to process
+exclude:
+  - .github
+  - node_modules
