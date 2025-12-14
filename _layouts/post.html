@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% include title-block.html %}
+
+<div class="cover">
+  <img src="{{ page.url | append: 'cover.jpg' | relative_url }}" alt="Cover image">
+</div>
+
+{% include_relative README.md %}
+
+{% include script-grid.html parent=page.parent folder=page.folder %}

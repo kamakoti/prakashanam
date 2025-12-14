@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Mahaperiyava Aradhana
 date: 2025-12-16
 parent: VDSP
@@ -15,12 +15,3 @@ title:
     tithi: "5127 விஶ்வாவஸு ௵ மார்கஶீர்ஷ க்ருஷ்ண த்வாதஶீ"
     date: "2025-டிச-16"
 ---
-{% include title-block.html %}
-
-<div class="cover">
-  <img src="{{ page.url | append: 'cover.jpg' | relative_url }}">
-</div>
-
-{% include_relative README.md %}
-
-{% include script-grid.html parent=page.parent folder=page.folder %}
