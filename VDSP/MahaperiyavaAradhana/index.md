@@ -5,6 +5,7 @@ date: 2025-12-16
 parent: VDSP
 folder: MahaperiyavaAradhana
 simple_title: "Mahaperiyava Aradhana"
+banner: vdsp
 title:
   en:
     desc: "Aradhana of Shri Chandrashekharendra Sarasvati Shricharana"

@@ -67,3 +67,27 @@ header h1 a {
   border-top: 1px solid #ccc;
   margin: 0.8rem 0;
 }
+
+.site-header {
+  margin-bottom: 1.5rem;
+}
+
+.site-banner {
+  text-align: center;
+}
+
+.site-banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Optional fine-tuning per banner */
+.site-banner--vdsp img {
+  max-height: 160px;
+}
+
+.site-banner--kamakoti img {
+  max-height: 140px;
+}
