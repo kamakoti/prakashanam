@@ -103,6 +103,7 @@ header h1 a {
   margin-bottom: 0.2em;
   line-height: 1.0;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .post-content h1 {
@@ -111,6 +112,7 @@ header h1 a {
   margin-bottom: 0.2em;
   line-height: 1.25;
   text-align: center;
+  font-size: 1.4rem;
 }
 
 
@@ -124,14 +126,10 @@ header h1 a {
   text-align: center;
 }
 
-.post-content p {
-  max-width: 65ch;
-}
-
 .post-content em {
   font-style: italic;
 }
 
-.post-content pranam{
+.post-content p.pranam{
     text-align: center;
 }
