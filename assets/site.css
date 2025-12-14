@@ -30,3 +30,38 @@ header h1 a {
   text-align: center;
   margin-bottom: 1.5rem;
 }
+
+.simple-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #663300;
+  font-size: 1.6rem;
+}
+
+.title-box {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background: #faf8f4;
+  margin-bottom: 1.5rem;
+}
+
+.title-box .desc {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.title-box .tithi {
+  font-style: italic;
+  margin-bottom: 0.2rem;
+}
+
+.title-box .date {
+  font-size: 0.95em;
+  color: #444;
+}
+
+.title-box hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0.8rem 0;
+}

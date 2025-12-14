@@ -12,7 +12,13 @@
   </header>
 
   <main>
-    {{ content }}
+
+  {% if page.simple_title %}
+    <h2 class="simple-title">{{ page.simple_title }}</h2>
+  {% endif %}
+
+  {{ content }}
+
   </main>
 
   <footer>
