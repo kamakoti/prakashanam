@@ -4,10 +4,13 @@ layout: default
 
 {% include title-block.html %}
 
+{% include script-grid.html parent=page.parent folder=page.folder %}
+
 <div class="cover">
   <img src="{{ page.url | append: 'cover.jpg' | relative_url }}" alt="Cover image">
 </div>
 
+{% capture readme %}
 {% include_relative README.md %}
-
-{% include script-grid.html parent=page.parent folder=page.folder %}
+{% endcapture %}
+{{ readme | markdownify }}

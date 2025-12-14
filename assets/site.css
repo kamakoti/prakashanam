@@ -36,12 +36,12 @@ header h1 a {
   margin-bottom: 1rem;
   color: #663300;
   font-size: 1.6rem;
-  text-align: center;
 }
 
 .title-box {
   border: 1px solid #ddd;
   padding: 1rem;
+  color: #663300;
   background: #faf8f4;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -49,11 +49,11 @@ header h1 a {
 
 .title-box .desc {
   font-weight: 600;
+  font-size: 1.25em;
   margin-bottom: 0.2rem;
 }
 
 .title-box .tithi {
-  font-style: italic;
   margin-bottom: 0.2rem;
 }
 
