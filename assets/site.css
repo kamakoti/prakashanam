@@ -99,18 +99,38 @@ header h1 a {
 
 .post-content h2 {
   color: #663300;
-  margin-top: 0.6em;
-  margin-bottom: 0.2em;
-  line-height: 1.0;
+  margin: 0;                 /* important */
+  line-height: 1.1;
   text-align: center;
   font-size: 1.2rem;
 }
 
+/* Start of an h2 block */
+.post-content :not(h2) + h2 {
+  margin-top: 1.2rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #ccc;
+  /* background: #faf8f4; */
+}
+
+/* Middle h2s in the block */
+.post-content h2 + h2 {
+  /* background: #faf8f4; */
+}
+
+/* End of an h2 block */
+.post-content h2 + :not(h2) {
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #ccc;
+}
+
 .post-content h1 {
-  color: hsl(250, 100%, 20%);
+  background-color: #663300;
+  color: white;
+  border-top: 1px solid #ccc;
   margin-top: 0.6em;
   margin-bottom: 0.2em;
-  line-height: 1.25;
+  line-height: 1.75;
   text-align: center;
   font-size: 1.4rem;
 }
