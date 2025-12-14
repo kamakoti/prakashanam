@@ -36,6 +36,7 @@ header h1 a {
   margin-bottom: 1rem;
   color: #663300;
   font-size: 1.6rem;
+  text-align: center;
 }
 
 .title-box {
@@ -43,6 +44,7 @@ header h1 a {
   padding: 1rem;
   background: #faf8f4;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .title-box .desc {
