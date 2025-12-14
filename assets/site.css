@@ -38,6 +38,11 @@ header h1 a {
   font-size: 1.6rem;
 }
 
+.simple-title h2 {
+  color: #663300;
+  text-align: left;
+}
+
 .title-box {
   border: 1px solid #ddd;
   padding: 1rem;
@@ -97,7 +102,8 @@ h4 {
   text-align: center;
 }
 
-h2 {
+.main h2 {
   color: #663300;
   text-align: center;
+  margin: 1rem 0;
 }
