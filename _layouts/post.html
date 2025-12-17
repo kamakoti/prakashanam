@@ -2,11 +2,12 @@
 layout: default
 ---
 
-{% if file_exists(page.url | append: 'cover.jpg' | relative_url) %}
 <div class="cover">
-  <img src="{{ page.url | append: 'cover.jpg' | relative_url }}" alt="Cover image">
+  <img
+    src="{{ page.url | append: 'cover.jpg' | relative_url }}"
+    alt="Cover image"
+    onerror="this.parentElement.style.display='none';">
 </div>
-{% endif %}
 
 {% include title-block.html %}
 
