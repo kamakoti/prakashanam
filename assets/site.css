@@ -3,6 +3,9 @@ body {
   margin: 2rem auto;
   max-width: 900px;
   line-height: 1.6;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* background-color: #F6E6C2; */
 }
 
 header h1 a {
