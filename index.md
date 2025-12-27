@@ -5,24 +5,40 @@ title: Kamakoti Prakashanam
 
 ## Kamakoti
 
-<ul>
+<div class="gallery">
 {% assign kam = site.pages | where: "parent", "Kamakoti" | sort: "date" | reverse %}
 {% for p in kam %}
-  <li>
-    <a href="{{ p.url | relative_url }}">{{ p.simple_title }}</a>
-    ({{ p.date | date: "%Y-%m-%d" }})
-  </li>
+  <a class="gallery-card" href="{{ p.url | relative_url }}">
+    <div class="thumb">
+      <img
+        src="{{ p.url | append: 'cover.jpg' | relative_url }}"
+        alt="{{ p.simple_title }}"
+        onerror="this.style.display='none'">
+    </div>
+    <div class="caption">
+      <div class="title">{{ p.simple_title }}</div>
+      <div class="date">{{ p.date | date: "%d %b %Y" }}</div>
+    </div>
+  </a>
 {% endfor %}
-</ul>
+</div>
 
 ## VDSP Sabha
 
-<ul>
+<div class="gallery">
 {% assign v = site.pages | where: "parent", "VDSP" | sort: "date" | reverse %}
 {% for p in v %}
-  <li>
-    <a href="{{ p.url | relative_url }}">{{ p.simple_title }}</a>
-    ({{ p.date | date: "%Y-%m-%d" }})
-  </li>
+  <a class="gallery-card" href="{{ p.url | relative_url }}">
+    <div class="thumb">
+      <img
+        src="{{ p.url | append: 'cover.jpg' | relative_url }}"
+        alt="{{ p.simple_title }}"
+        onerror="this.style.display='none'">
+    </div>
+    <div class="caption">
+      <div class="title">{{ p.simple_title }}</div>
+      <div class="date">{{ p.date | date: "%d %b %Y" }}</div>
+    </div>
+  </a>
 {% endfor %}
-</ul>
+</div>
