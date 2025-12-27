@@ -7,17 +7,7 @@
 
 ## வேத தர்ம ஶாஸ்த்ர பரிபாலன ஸபா (ஸ்தாபிதம் பொயு 1942)
 
-# ஶ்ரீ ராம பூஜை
-
-ஜய ஜய ஶங்கர!
-
-ஶ்ரீ காஞ்சீ காமகோடி மூலாம்னாய ஸர்வஜ்ஞ பீடம்
-ஜகத்குரு ஶங்கராசார்ய ஶ்ரீமடம் ஸம்ஸ்தானம்
-
-*வேத தர்ம ஶாஸ்த்ர பரிபாலன ஸபை*
-(ஸ்தாபிதம் 1942)
-
-*ஶ்ரீ ராம பூஜை: அயோத்யா புநஃப்ரதிஷ்டா தினம் - பௌஷ ஶுக்ல த்வாதஶி*
+# ஶ்ரீ ராம பூஜை: அயோத்யா புநஃப்ரதிஷ்டா தினம்
 
 “ராமோ விக்₃ரஹவாந் த₄ர்மஃ” என்ற கூற்றின்படி பகவான் ஶ்ரீராமர் நமது ஸநாதந தர்மத்தின் மூர்த்த வடிவினராக இருந்தார். அண்மையிலும் அயோத்தியில் ராம ஜந்ம பூமியில் வெகு காலம் கழித்து பால ராமரின் புநஃ ப்ரதிஷ்டையானது நடைபெற்றது.
 
@@ -46,17 +36,7 @@ Jaya Jaya Shankara!
 
 ## Veda Dharma Shastra Paripalana Sabha (established CE 1942)
 
-# Shri Rama Puja
-
-Jaya Jaya Shankara!
-
-Shri Kanchi Kamakoti Mulamnaya Sarvajna Peetam
-Jagadguru Shankaracharya Swamigal Shrimatam Samsthanam
-
-*Veda Dharma Shastra Paripalana Sabha*
-(est 1942)
-
-*Shri Rama Puja: Ayodhya Punah Pratishtha Dinam - Pausha Shukla Dvadashi*
+# Shri Rama Puja: Ayodhya Punah Pratishtha Dinam
 
 As per the saying “rāmo vigrahavān dharmaḥ” Bhagavan Shri Rama was the embodiment of our Sanatana Dharma. The Punah Pratishtha of Baala Rama at the Rama Janma Bhumi at Ayodhya also took place recently after a long time.
 
