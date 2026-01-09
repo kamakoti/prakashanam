@@ -23,7 +23,7 @@ title: Kamakoti Prakashanam
 {% endfor %}
 </div>
 
-## VDSP Sabha
+## Veda Dharma Shastra Paripalana Sabha
 
 <div class="gallery">
 {% assign v = site.pages | where: "parent", "VDSP" | sort: "date" | reverse %}
