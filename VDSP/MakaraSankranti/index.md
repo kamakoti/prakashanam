@@ -4,7 +4,7 @@ title: Surya Puja
 date: 2026-01-14
 parent: VDSP
 folder: SuryaPuja
-simple_title: "Surya Puja"
+simple_title: "Makara Sankranti Surya Puja"
 banner: vdsp
 title:
   en:
