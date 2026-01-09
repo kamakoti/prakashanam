@@ -36,8 +36,8 @@ title: Kamakoti Prakashanam
         onerror="this.style.display='none'">
     </div>
     <div class="caption">
-      <div class="title">{{ p.simple_title }}</div>
       <div class="date">{{ p.date | date: "%d %b %Y" }}</div>
+      <div class="title">{{ p.simple_title }}</div>
     </div>
   </a>
 {% endfor %}
