@@ -4,7 +4,7 @@ title: Amrita Siddhi Yoga Devi Parayanam (Budha Anuradha)
 date: 2026-01-14
 parent: Kamakoti
 folder: AmritaSiddhi
-simple_title: "Amrita Siddhi Yoga Devi Parayanam"
+simple_title: "Budhanuradha Amrita Siddhi Yoga Devi Parayanam"
 banner: kamakoti
 title:
   en:
