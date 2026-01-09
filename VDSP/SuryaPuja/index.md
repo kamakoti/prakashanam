@@ -4,7 +4,7 @@ title: Surya Puja
 date: 2025-12-22
 parent: VDSP
 folder: SuryaPuja
-simple_title: "Surya Puja"
+simple_title: "Uttarayana Surya Puja"
 banner: vdsp
 title:
   en:
