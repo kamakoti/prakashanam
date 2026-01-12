@@ -17,4 +17,9 @@ title:
     date: "2026-ஜன-25"
 ---
 
+---
+[Surya Puja/ஸூர்ய பூஜை](../SuryaPuja-RathaSaptami/)
+
 {% include script-grid.html parent="VDSP" folder="SuryaPuja" %}
+
+---
