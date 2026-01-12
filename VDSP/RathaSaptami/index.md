@@ -17,4 +17,4 @@ title:
     date: "2026-ஜன-25"
 ---
 
-{% include script-grid.html parent=VDSP folder=SuryaPuja %}
+{% include script-grid.html parent="VDSP" folder="SuryaPuja" %}
