@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shri Jayendra Periyava Aradhana
-date: 2025-12-22
+date: 2026-03-01
 parent: VDSP
 folder: ShriJayendraPeriyavaAradhana
 simple_title: "Shri Jayendra Sarasvati Shricharana's Aradhana #8"
