@@ -3,7 +3,7 @@ layout: post
 title: Surya Puja
 date: 2026-01-25
 parent: VDSP
-folder: SuryaPuja
+folder: RathaSaptami
 simple_title: "Ratha Saptami (Snānam)"
 banner: vdsp
 title:
@@ -13,6 +13,8 @@ title:
     date: "2026-Jan-25"
   ta:
     desc: "ரத ஸப்தமி"
-    tithi: "5127 விஶ்வாவஸு ௵ தை 12"
+    tithi: "5127 விஶ்வாவஸு ௵ தை 12 ௳"
     date: "2026-ஜன-25"
 ---
+
+{% include script-grid.html parent=VDSP folder=SuryaPuja %}
