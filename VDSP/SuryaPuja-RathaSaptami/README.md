@@ -13,6 +13,8 @@
 
 “ஆரோக்யம் பாஸ்கராத் இச்சேத்” என்ற கூற்றின்படி நாம் ஸூர்ய பகவானை பூஜித்து ஆரோக்யமும் செல்வமும் பெறுவோமாக!
 
+**இந்த ஸம்வத்ஸரத்தில் ரத சப்தமி, பானு சப்தமியுடன் இணைந்து வருவது கூடுதல் சிறப்பாகும்!**
+
 இதற்கான லகுவான பூஜா பத்ததி பல லிபிகளில் வெளியிடப்படுகிறது.
 
 🙏🙏🙏
@@ -37,6 +39,8 @@ Jaya Jaya Shankara!
 Occasions such as Bhanu Saptami, Makara Sankranti and Ratha Saptami are suitable for the worship of Surya. The visible (Sayana) Uttarayana is also a Punya Kala for the same, and our Jagadguru Shankaracharya Himself performs this puja too.
 
 As per the saying “arogyam bhāskarād icchet”, let us worship Surya Bhagavan and benefit with health and wealth.
+
+**It is all the more special that this year, Ratha Saptami coincides with Bhanu Saptami!**
 
 A laghu puja paddhati is being released in many lipis for this purpose.
 
