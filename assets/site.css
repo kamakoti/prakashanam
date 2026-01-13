@@ -3,79 +3,59 @@ body {
   margin: 2rem auto;
   max-width: 900px;
   line-height: 1.6;
-  padding-left: 10px;
-  padding-right: 10px;
-  /* background-color: #F6E6C2; */
+  padding: 0 10px;
+}
+
+/* Shared brown color */
+h2,
+.main-header,
+.simple-title,
+.simple-title h2,
+.title-box,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+header h1 a {
+  color: #663300;
 }
 
 header h1 a {
   text-decoration: none;
-  color: #663300;
 }
 
-h2 {
-  color: #663300;
-}
-
-.main-header {
-  color: #663300;
+.main-header,
+.simple-title,
+.simple-title h2,
+.title-box,
+.site-header,
+.site-banner,
+.script-cell,
+.cover,
+.post-content h2,
+.post-content h4,
+.post-content p.pranam,
+.caption {
   text-align: center;
-}
-
-.script-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  gap: 12px;
-  margin: 1.5rem 0;
-}
-
-.script-cell {
-  text-align: center;
-}
-
-.script-cell img {
-  width: 75px;
-  height: 75px;
-}
-
-.cover {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.cover img {
-  max-width: 40%;
-  height: auto;
 }
 
 .simple-title {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  color: #663300;
+  margin: 1rem 0;
   font-size: 1.6rem;
-  text-align: center;
-}
-
-.simple-title h2 {
-  color: #663300;
-  text-align: center;
 }
 
 .title-box {
   border: 1px solid #ddd;
   padding: 1rem;
-  color: #663300;
   background: #faf8f4;
   margin-bottom: 1.5rem;
-  text-align: center;
 }
 
 .title-box .desc {
   font-weight: 600;
   font-size: 1.25em;
-  margin-bottom: 0.2rem;
 }
 
+.title-box .desc,
 .title-box .tithi {
   margin-bottom: 0.2rem;
 }
@@ -91,23 +71,26 @@ h2 {
   margin: 0.8rem 0;
 }
 
-.site-header {
+.site-header,
+.cover {
   margin-bottom: 1.5rem;
-  text-align: center;
 }
 
-.site-banner {
-  text-align: center;
+.site-banner img,
+.cover img {
+  height: auto;
 }
 
 .site-banner img {
   max-width: 100%;
-  height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* Optional fine-tuning per banner */
+.cover img {
+  max-width: 40%;
+}
+
 .site-banner--vdsp img {
   max-height: 160px;
 }
@@ -116,63 +99,52 @@ h2 {
   max-height: 140px;
 }
 
-.post-content h2 {
-  color: #663300;
-  margin: 0;                 /* important */
-  line-height: 1.4;
-  text-align: center;
-  font-size: 1.2rem;
+/* Script grid */
+.script-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 12px;
+  margin: 1.5rem 0;
 }
 
-/* Start of an h2 block */
-.post-content :not(h2) + h2 {
-  margin-top: 1.2rem;
-  padding-top: 0.6rem;
-  border-top: 1px solid #ccc;
-  /* background: #faf8f4; */
+.script-cell img {
+  width: 75px;
+  height: 75px;
 }
 
-/* Middle h2s in the block */
-.post-content h2 + h2 {
-  /* background: #faf8f4; */
-}
-
-/* End of an h2 block */
-.post-content h2 + :not(h2) {
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid #ccc;
-}
-
+/* Post content */
 .post-content h1 {
   background-color: #663300;
   color: white;
   border-top: 1px solid #ccc;
-  margin-top: 0.6em;
-  margin-bottom: 0.2em;
+  margin: 0.6em 0 0.2em;
   line-height: 1.75;
   text-align: center;
   font-size: 1.4rem;
 }
 
+.post-content h2 {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 1.2rem;
+}
+
+.post-content :not(h2) + h2 {
+  margin-top: 1.2rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #ccc;
+}
+
+.post-content h2 + :not(h2) {
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #ccc;
+}
 
 .post-content h3 {
-  color: #663300;
   margin-top: 0.8em;
 }
 
-.post-content h4 {
-  color: #663300;
-  text-align: center;
-}
-
-.post-content em {
-  font-style: italic;
-}
-
-.post-content p.pranam{
-    text-align: center;
-}
-
+/* Gallery */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -210,7 +182,6 @@ h2 {
 
 .caption {
   padding: 0.6rem;
-  text-align: center;
 }
 
 .caption .title {
