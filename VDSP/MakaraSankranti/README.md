@@ -1,11 +1,3 @@
-ஜய ஜய ஶங்கர!
-{: .pranam}
-
-## ஶ்ரீமத் ஆத்ய ஶங்கர பகவத்பாதாசார்ய பரம்பராகதம்
-## ஶ்ரீ காஞ்சீ காமகோடி மூலாம்நாய ஸர்வஜ்ஞ பீடம்
-## ஜகத்குரு ஶங்கராசார்ய ஶ்ரீமடம் ஸம்ஸ்தானம்
-
-## வேத தர்ம ஶாஸ்த்ர பரிபாலன ஸபா (ஸ்தாபிதம் பொயு 1942)
 
 # ஸூர்ய பூஜை
 
@@ -15,22 +7,9 @@
 
 இதற்கான லகுவான பூஜா பத்ததி பல லிபிகளில் வெளியிடப்படுகிறது.
 
-🙏🙏🙏
+🙏 ஜய ஜய ஶங்கர! ஹர ஹர ஶங்கர! 🙏
 {: .pranam}
 
-ஹர ஹர ஶங்கர!
-{: .pranam}
-
-
-
-Jaya Jaya Shankara!
-{: .pranam}
-
-## Shrimad Adya Shankara Bhagavatpadacharya Paramparagatam
-## Shri Kanchi Kamakoti Mulamnaya Sarvajna Peetam
-## Jagadguru Shankaracharya Shrimatam Samsthanam
-
-## Veda Dharma Shastra Paripalana Sabha (established CE 1942)
 
 # Surya Puja
 
@@ -40,8 +19,5 @@ As per the saying “arogyam bhāskarād icchet”, let us worship Surya Bhaga
 
 A laghu puja paddhati is being released in many lipis for this purpose.
 
-🙏🙏🙏 
-{: .pranam}
-
-Hara Hara Shankara!
+🙏 Jaya Jaya Shankara! Hara Hara Shankara! 🙏 
 {: .pranam}

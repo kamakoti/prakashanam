@@ -1,11 +1,3 @@
-ஜய ஜய ஶங்கர!
-{: .pranam}
-
-## ஶ்ரீமத் ஆத்ய ஶங்கர பகவத்பாதாசார்ய பரம்பராகதம்
-## ஶ்ரீ காஞ்சீ காமகோடி மூலாம்நாய ஸர்வஜ்ஞ பீடம்
-## ஜகத்குரு ஶங்கராசார்ய ஶ்ரீமடம் ஸம்ஸ்தானம்
-
-## வேத தர்ம ஶாஸ்த்ர பரிபாலன ஸபா (ஸ்தாபிதம் பொயு 1942)
 
 # ஶ்ரீ சந்த்ரஶேகரேந்த்ர ஸரஸ்வதீ ஶ்ரீசரணர்கள் ஆராதனை
 
@@ -17,22 +9,9 @@
 
 ஆகவே இத்தருணத்தில் நம் உயர்ந்த குரு பரம்பரையை பூஜித்து குருவருள் பெறுவோம்!
 
-🙏🙏🙏
+🙏 ஜய ஜய ஶங்கர! ஹர ஹர ஶங்கர! 🙏
 {: .pranam}
 
-ஹர ஹர ஶங்கர!
-{: .pranam}
-
-
-
-Jaya Jaya Shankara!
-{: .pranam}
-
-## Shrimad Adya Shankara Bhagavatpadacharya Paramparagatam
-## Shri Kanchi Kamakoti Mulamnaya Sarvajna Peetam
-## Jagadguru Shankaracharya Shrimatam Samsthanam
-
-## Veda Dharma Shastra Paripalana Sabha (established CE 1942)
 
 # Aradhana of Shri Chandrashekharendra Sarasvati Shricharana
 
@@ -44,8 +23,5 @@ Likewise, we are all indebted to Shri Chandrashekharendra Sarasvati Shricharana,
 
 So let us worship our great Guru Parampara on this occasion and receive Their anugraha!
 
-🙏🙏🙏 
-{: .pranam}
-
-Hara Hara Shankara!
+🙏 Jaya Jaya Shankara! Hara Hara Shankara! 🙏 
 {: .pranam}

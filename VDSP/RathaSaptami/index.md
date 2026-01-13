@@ -18,8 +18,6 @@ title:
 ---
 
 ---
-[Surya Puja/ஸூர்ய பூஜை](../SuryaPuja-RathaSaptami/)
+[Surya Puja/ஸூர்ய பூஜை:](../SuryaPuja-RathaSaptami/)
 
 {% include script-grid.html parent="VDSP" folder="SuryaPuja" %}
-
----
