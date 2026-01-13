@@ -10,9 +10,9 @@ title:
   en:
     desc: "Surya Puja (Makara Sankranti)"
     tithi: "5127 Vishvaavasu ◆ Makara 1"
-    date: "2026-Jan-14/15"
+    date: "2026-Jan-14 (as per current vākyam, Jan-15)"
   ta:
     desc: "ஸூர்ய பூஜை (மகர ஸங்க்ராந்தி)"
     tithi: "5127 விஶ்வாவஸு ௵ தை ௴ 1 ௳"
-    date: "2026-ஜன-14/15"
+    date: "2026-ஜன-14 (நடப்பு வாக்ய கணிதப்படி ஜன-15)"
 ---

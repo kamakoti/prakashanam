@@ -10,9 +10,9 @@ title:
   en:
     desc: "Go Puja"
     tithi: "5127 Vishvaavasu ◆ Makara 2"
-    date: "2026-Jan-15/16"
+    date: "2026-Jan-15 (as per current vākyam, Jan-16)"
   ta:
     desc: "கோ பூஜை"
     tithi: "5127 விஶ்வாவஸு ௵ தை ௴ 2 ௳"
-    date: "2026-ஜன-15/16"
+    date: "2026-ஜன-15 (நடப்பு வாக்ய கணிதப்படி ஜன-16)"
 ---
