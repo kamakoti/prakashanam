@@ -1,6 +1,8 @@
 title: Kamakoti Prakashanam
-description: Publications from Kamakoti and VDSP
+description: "Publications from Shri Kanchi Kamakoti Peetham/Veda Dharma Shastra Paripalana Sabha"
 markdown: kramdown
+url: https://kamakoti.github.io
+baseurl: /prakashanam
 
 # Ensure Jekyll ignores large folders it doesn't need to process
 exclude:

@@ -1,0 +1,16 @@
+{% assign title = page.simple_title | default: page.title | default: site.title %}
+{% assign description = page.meta_description | default: page.title.en.desc | default: site.description %}
+{% assign image = page.url | append: 'cover.jpg' | absolute_url %}
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ image }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:image" content="{{ image }}">

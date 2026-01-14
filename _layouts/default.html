@@ -5,6 +5,7 @@
   <title>{{ page.simple_title | default: site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+  {% include social-meta.html %}
 </head>
 <body>
   <header class="site-header">
