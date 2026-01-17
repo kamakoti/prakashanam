@@ -3,8 +3,7 @@ layout: default
 title: Kamakoti Prakashanam
 ---
 
-{% assign upcoming = site.pages | where_exp: "p", "p.date and p.date > site.time" | sort: "date" %}
-
+{% assign upcoming = site.pages | where: "parent", "Kamakoti" | where_exp: "p", "p.date != nil and p.date > site.time" | sort: "date" %}
 {% if upcoming.size > 0 %}
 ## Upcoming
 
