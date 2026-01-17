@@ -3,13 +3,12 @@ layout: default
 title: Kamakoti Prakashanam
 ---
 
-{% assign upcoming = site.pages | where: "parent", "Kamakoti" | where_exp: "p", "p.date != nil and p.date > site.time" | sort: "date" %}
-{% if upcoming.size > 0 %}
-## Upcoming
+## Kamakoti
 
-<div class="gallery upcoming">
-{% for p in upcoming %}
-  <a class="gallery-card upcoming" href="{{ p.url | relative_url }}">
+<div class="gallery">
+{% assign kam = site.pages | where: "parent", "Kamakoti" | sort: "date" | reverse %}
+{% for p in kam %}
+  <a class="gallery-card" href="{{ p.url | relative_url }}">
     <div class="thumb">
       <img
         src="{{ p.url | append: 'cover.jpg' | relative_url }}"
@@ -23,16 +22,12 @@ title: Kamakoti Prakashanam
   </a>
 {% endfor %}
 </div>
-{% endif %}
 
-{% assign kamakoti = site.pages | where: "parent", "Kamakoti" %}
-{% assign vdsp = site.pages | where: "parent", "VDSP" %}
-{% assign published = kamakoti | concat: vdsp | where_exp: "p", "p.date == nil or p.date <= site.time" | sort: "date" | reverse %}
-
-## Past Publications
+## Veda Dharma Shastra Paripalana Sabha
 
 <div class="gallery">
-{% for p in published %}
+{% assign v = site.pages | where: "parent", "VDSP" | sort: "date" | reverse %}
+{% for p in v %}
   <a class="gallery-card" href="{{ p.url | relative_url }}">
     <div class="thumb">
       <img
