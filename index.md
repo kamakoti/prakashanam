@@ -3,11 +3,36 @@ layout: default
 title: Kamakoti Prakashanam
 ---
 
-## Kamakoti
+{% assign now_ts = site.time | date: "%s" | plus: 0 %}
+
+{% comment %} 1. Filter pages separately and concat (safer than where_exp) {% endcomment %}
+{% assign kam_pages = site.pages | where: "parent", "Kamakoti" %}
+{% assign vdsp_pages = site.pages | where: "parent", "VDSP" %}
+{% assign all_pages = kam_pages | concat: vdsp_pages %}
+
+{% comment %} 2. Split into Upcoming and Published arrays {% endcomment %}
+{% assign upcoming_list = "" | split: "" %}
+{% assign published_list = "" | split: "" %}
+
+{% for p in all_pages %}
+  {% assign p_ts = p.date | date: "%s" | plus: 0 %}
+  {% if p_ts > now_ts %}
+    {% assign upcoming_list = upcoming_list | push: p %}
+  {% else %}
+    {% assign published_list = published_list | push: p %}
+  {% endif %}
+{% endfor %}
+
+{% comment %} 3. Sort arrays {% endcomment %}
+{% assign upcoming_sorted = upcoming_list | sort: "date" %}
+{% assign published_sorted = published_list | sort: "date" | reverse %}
+
+
+{% if upcoming_sorted.size > 0 %}
+## Upcoming
 
 <div class="gallery">
-{% assign kam = site.pages | where: "parent", "Kamakoti" | sort: "date" | reverse %}
-{% for p in kam %}
+{% for p in upcoming_sorted %}
   <a class="gallery-card" href="{{ p.url | relative_url }}">
     <div class="thumb">
       <img
@@ -22,12 +47,13 @@ title: Kamakoti Prakashanam
   </a>
 {% endfor %}
 </div>
+{% endif %}
 
-## Veda Dharma Shastra Paripalana Sabha
+
+## Past
 
 <div class="gallery">
-{% assign v = site.pages | where: "parent", "VDSP" | sort: "date" | reverse %}
-{% for p in v %}
+{% for p in published_sorted %}
   <a class="gallery-card" href="{{ p.url | relative_url }}">
     <div class="thumb">
       <img
