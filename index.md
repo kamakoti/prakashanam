@@ -3,9 +3,7 @@ layout: default
 title: Kamakoti Prakashanam
 ---
 
-{% assign upcoming = site.pages
-  | where_exp: "p", "p.date and p.date > site.time"
-  | sort: "date" %}
+{% assign upcoming = site.pages | where_exp: "p", "p.date and p.date > site.time" | sort: "date" %}
 
 {% if upcoming.size > 0 %}
 ## Upcoming
@@ -28,11 +26,9 @@ title: Kamakoti Prakashanam
 </div>
 {% endif %}
 
-{% assign published = site.pages
-  | where_exp: "p", "p.parent == 'Kamakoti' or p.parent == 'VDSP'"
-  | where_exp: "p", "p.date == nil or p.date <= site.time"
-  | sort: "date"
-  | reverse %}
+{% assign kamakoti = site.pages | where: "parent", "Kamakoti" %}
+{% assign vdsp = site.pages | where: "parent", "VDSP" %}
+{% assign published = kamakoti | concat: vdsp | where_exp: "p", "p.date == nil or p.date <= site.time" | sort: "date" | reverse %}
 
 ## Past Publications
 
