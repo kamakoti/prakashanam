@@ -3,7 +3,7 @@ layout: post
 title: Bhishma Tarpanam
 date: 2026-01-26
 parent: VDSP
-folder: SuryaPuja
+folder: BhishmaTarpanam
 simple_title: "Bhishma Tarpanam"
 banner: vdsp
 title:
