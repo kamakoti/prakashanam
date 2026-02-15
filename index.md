@@ -15,11 +15,13 @@ title: Kamakoti Prakashanam
 {% assign published_list = "" | split: "" %}
 
 {% for p in all_pages %}
-  {% assign p_ts = p.date | date: "%s" | plus: 0 %}
-  {% if p_ts > now_ts %}
-    {% assign upcoming_list = upcoming_list | push: p %}
-  {% else %}
-    {% assign published_list = published_list | push: p %}
+  {% if p.date %}
+    {% assign p_ts = p.date | date: "%s" | plus: 0 %}
+    {% if p_ts >= now_ts %}
+      {% assign upcoming_list = upcoming_list | push: p %}
+    {% else %}
+      {% assign published_list = published_list | push: p %}
+    {% endif %}
   {% endif %}
 {% endfor %}
 

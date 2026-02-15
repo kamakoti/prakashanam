@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Chandra Grahanam
-date: 2025-11-08
-draft: true
+# date: 2025-11-08
 parent: VDSP
 folder: ChandraGrahanam
 simple_title: "Chandra Grahanam"
