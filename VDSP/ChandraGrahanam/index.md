@@ -3,6 +3,7 @@ layout: post
 title: Chandra Grahanam
 date: 2026-03-03
 parent: VDSP
+draft: true
 folder: ChandraGrahanam
 simple_title: "Chandra Grahanam"
 banner: panchanga-sadas
