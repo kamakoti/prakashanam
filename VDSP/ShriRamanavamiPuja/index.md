@@ -4,6 +4,7 @@ title: "Shri Rāmanavami Puja"
 date: 2026-03-26
 parent: VDSP
 folder: ShriRamanavamiPuja
+file_stub: ShriRamaPuja
 simple_title: "Shri Ramanavami Puja"
 banner: vdsp
 title:
