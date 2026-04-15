@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Panchanga Puja"
-date: 2026-03-19
+date: 2026-04-14
 parent: VDSP
 folder: PanchangaPuja
 simple_title: "5128 Parābhava Panchanga Puja"
