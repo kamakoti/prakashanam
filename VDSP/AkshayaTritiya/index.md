@@ -3,7 +3,7 @@ layout: post
 title: Akshaya Tritiya
 date: 2026-04-19
 parent: VDSP
-folder: Akshaya Tritiya
+folder: AkshayaTritiya
 simple_title: "Akshaya Tritiya"
 banner: vdsp
 title:
