@@ -188,22 +188,45 @@ def create_event(service, calendar_id: str, summary: str, description: str,
 
 def main() -> int:
     calendar_id = os.environ["CALENDAR_ID"]
-    tomorrow = (datetime.now(IST) + timedelta(days=0)).date()
+    verbose = os.environ.get("VERBOSE", "").lower() in ("1", "true", "yes")
+    dry_run = os.environ.get("DRY_RUN", "").lower() in ("1", "true", "yes")
+
+    tomorrow = (datetime.now(IST) + timedelta(days=1)).date()
     print(f"Looking for events on {tomorrow.isoformat()} (IST tomorrow)")
+    if verbose:
+        print(f"Scanning repo root: {REPO_ROOT}")
+    if dry_run:
+        print("DRY RUN — no calendar events will be created, ledger won't be updated")
 
     ledger  = load_ledger()
     tweeted = ledger.setdefault("tweeted", {})
 
+    scanned = 0
+    with_fm = 0
+    with_date = 0
+
     candidates = []
-    for md_path, fm in iter_event_pages(REPO_ROOT):
+    for md_path, fm in iter_event_pages_verbose(REPO_ROOT, verbose):
+        scanned += 1
+        with_fm += 1
+        if "date" not in fm:
+            if verbose:
+                print(f"  {md_path.relative_to(REPO_ROOT)}: front matter has no 'date' field")
+            continue
+        with_date += 1
+
         event_date = fm["date"]
         if isinstance(event_date, str):
             try:
                 event_date = datetime.strptime(event_date, "%Y-%m-%d").date()
-                print(event_date)
             except ValueError:
-                print(f"  skip {md_path}: unparseable date {fm['date']!r}")
+                print(f"  skip {md_path.relative_to(REPO_ROOT)}: unparseable date {fm['date']!r}")
                 continue
+
+        if verbose:
+            marker = "  <-- MATCHES TOMORROW" if event_date == tomorrow else ""
+            print(f"  {md_path.relative_to(REPO_ROOT)}: date={event_date}{marker}")
+
         if event_date != tomorrow:
             continue
 
@@ -214,8 +237,17 @@ def main() -> int:
             continue
         candidates.append((md_path, fm, key, event_date))
 
+    print(f"\nScan summary: {with_fm} files with front matter, "
+          f"{with_date} with a date field, {len(candidates)} matching tomorrow")
+
     if not candidates:
         print("No new events for tomorrow. Done.")
+        return 0
+
+    if dry_run:
+        for md_path, fm, key, event_date in candidates:
+            print(f"\n[DRY RUN] would queue {key}:")
+            print(compose_tweet(fm, md_path))
         return 0
 
     service = get_calendar_service()
@@ -251,6 +283,26 @@ def main() -> int:
     save_ledger(ledger)
     print(f"\nLedger updated: {LEDGER_PATH}")
     return 0
+
+
+def iter_event_pages_verbose(root: Path, verbose: bool):
+    """Like iter_event_pages but yields ALL files with front matter (not just ones with 'date'),
+    and prints what's being skipped when verbose=True."""
+    md_count = 0
+    for md_path in root.rglob("index.md"):
+        md_count += 1
+        if any(part in SKIP_DIRS for part in md_path.parts):
+            if verbose:
+                print(f"  SKIP (ignored dir): {md_path.relative_to(root)}")
+            continue
+        fm = parse_front_matter(md_path)
+        if fm is None:
+            if verbose:
+                print(f"  SKIP (no/bad front matter): {md_path.relative_to(root)}")
+            continue
+        yield md_path, fm
+    if verbose:
+        print(f"  Total index.md files found: {md_count}")
 
 
 if __name__ == "__main__":
