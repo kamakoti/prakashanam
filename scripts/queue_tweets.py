@@ -200,6 +200,7 @@ def main() -> int:
         if isinstance(event_date, str):
             try:
                 event_date = datetime.strptime(event_date, "%Y-%m-%d").date()
+                print(event_date)
             except ValueError:
                 print(f"  skip {md_path}: unparseable date {fm['date']!r}")
                 continue
