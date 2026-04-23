@@ -191,7 +191,7 @@ def main() -> int:
     verbose = os.environ.get("VERBOSE", "").lower() in ("1", "true", "yes")
     dry_run = os.environ.get("DRY_RUN", "").lower() in ("1", "true", "yes")
 
-    tomorrow = (datetime.now(IST) + timedelta(days=0)).date()
+    tomorrow = (datetime.now(IST) + timedelta(days=1)).date()
     print(f"Looking for events on {tomorrow.isoformat()} (IST tomorrow)")
     if verbose:
         print(f"Scanning repo root: {REPO_ROOT}")
