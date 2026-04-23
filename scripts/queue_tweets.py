@@ -188,7 +188,7 @@ def create_event(service, calendar_id: str, summary: str, description: str,
 
 def main() -> int:
     calendar_id = os.environ["CALENDAR_ID"]
-    tomorrow = (datetime.now(IST) + timedelta(days=-1)).date()
+    tomorrow = (datetime.now(IST) + timedelta(days=0)).date()
     print(f"Looking for events on {tomorrow.isoformat()} (IST tomorrow)")
 
     ledger  = load_ledger()
