@@ -4,7 +4,7 @@ title: Papahara Dashami
 date: 2026-05-25
 parent: VDSP
 draft: true
-folder: GangaDashahara
+folder: PapaharaDashami
 simple_title: "Papahara Dashami"
 banner: vdsp
 title:
