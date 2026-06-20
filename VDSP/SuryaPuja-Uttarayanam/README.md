@@ -1,0 +1,23 @@
+
+# ஸூர்ய பூஜை
+
+பானு ஸப்தமி, மகர ஸங்க்ராந்தி, ரத ஸப்தமி போன்ற பல தருணங்கள் ஸூர்ய பூஜைக்கு ஏற்றவை. ப்ரத்யக்ஷ (ஸாயந) உத்தராயணமும் இதற்கான புண்ய காலமே என்பதால் நமது ஜகத்குரு ஶங்கராசார்யரே இந்த பூஜையையும் அனுஷ்டிக்கிறார்.
+
+“ஆரோக்யம் பாஸ்கராத் இச்சேத்” என்ற கூற்றின்படி நாம் ஸூர்ய பகவானை பூஜித்து ஆரோக்யமும் செல்வமும் பெறுவோமாக!
+
+இதற்கான லகுவான பூஜா பத்ததி பல லிபிகளில் வெளியிடப்படுகிறது.
+
+🙏 ஜய ஜய ஶங்கர! ஹர ஹர ஶங்கர! 🙏
+{: .pranam}
+
+
+# Surya Puja
+
+Occasions such as Bhanu Saptami, Makara Sankranti and Ratha Saptami are suitable for the worship of Surya. The visible (Sayana) Uttarayana is also a Punya Kala for the same, and our Jagadguru Shankaracharya Himself performs this puja too.
+
+As per the saying “arogyam bhāskarād icchet”, let us worship Surya Bhagavan and benefit with health and wealth.
+
+A laghu puja paddhati is being released in many lipis for this purpose.
+
+🙏 Jaya Jaya Shankara! Hara Hara Shankara! 🙏 
+{: .pranam}

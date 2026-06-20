@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Surya Puja
-date: 2025-12-22
+date: 2026-06-21
 parent: VDSP
 folder: SuryaPuja
-simple_title: "Uttarayana Surya Puja"
+simple_title: "Dakshinayana Surya Puja"
 banner: vdsp
 title:
   en:
-    desc: "Surya Puja (Sayana Uttarayana/Makara Sankranti/Ratha Saptami)"
-    tithi: "5127 Vishvaavasu ◆ Dhanus 7 / Makara 1 / Makara 12"
-    date: "2025-Dec-22 / 2026-Jan-14/15 / 2026-Jan-25"
+    desc: "Surya Puja (Dakshinayanam)"
+    tithi: "5128 Paraabhava ◆ Mithuna 7"
+    date: "2026-Jun-21"
   ta:
-    desc: "ஸூர்ய பூஜை (ஸாயந) உத்தராயணம்/மகர ஸங்க்ராந்தி/ரத ஸப்தமி)"
-    tithi: "5127 விஶ்வாவஸு ௵ மார்கழி ௴ 7 ௳/ தை ௴ 1 ௳/ தை ௴ 12 ௳"
-    date: "2025-டிச-22 / 2026-ஜன-14/15 / 2026-ஜன-25"
+    desc: "ஸூர்ய பூஜை (தக்ஷிணாயனம்)"
+    tithi: "5128 பராபவ ௵ ஆனி ௴ 7 ௳"
+    date: "2026-ஜூன்-21"
 ---
