@@ -1,0 +1,123 @@
+# Master table of all AmritaSiddhi occurrences (past + future).
+#
+# The daily rotation workflow (04:00 IST) uses this table to keep
+# AmritaSiddhi/ pointing at the next upcoming occurrence.
+#
+# BEHAVIOUR:
+#   - AmritaSiddhi/ is a "current event" alias — its index.md always describes
+#     the earliest occurrence with date >= today.
+#   - When today crosses past an event, the workflow archives the current
+#     folder as AmritaSiddhi-<old-date>/ and materialises the next entry.
+#   - README.md and cover.jpg are copied from the just-archived folder into
+#     the new one (both are constant across occurrences).
+#   - Archived folders are FROZEN. Editing this file only affects the current
+#     folder; past AmritaSiddhi-<date>/ folders are untouched.
+#   - Entries are NEVER removed from this file by the workflow — this is
+#     the source-of-truth table you maintain by hand.
+#
+# MAINTENANCE:
+#   - Append new occurrences as dates are announced (any order works — the
+#     workflow sorts by date).
+#   - Tamil `date` is auto-generated from the ISO date; supply only Tamil
+#     `desc` and `tithi`.
+#   - Fix typos for a past event? Edit the archived folder's index.md
+#     directly; this file drives only the current alias.
+#
+# SAMVATSARA NOTE:
+#   - Kali 5128 = Paraabhava = 2026-Apr-14 to 2027-Apr-13
+#   - Kali 5129 = Plavanga   = 2027-Apr-14 to 2028-Apr-12
+#   Boundary: solar Mesha Sankranti (Chittirai 1).
+
+AmritaSiddhi:
+  parent: VDSP
+  banner: vdsp
+  folder_path: AmritaSiddhi
+  occurrences:
+
+    # ---- Paraabhava 5128 ----
+
+    - date: 2026-07-11    # Shanirohini
+      en: { desc: "Shanirohini Amrita Siddhi Yoga Devi Parayanam",   tithi: "5128 Paraabhava ◆ Mithuna 27" }
+      ta: { desc: "ஶநிரோஹிணீ அம்ருத ஸித்தி யோக தேவீ பாராயணம்",         tithi: "5128 பராபவ ௵ ஆனி ௴ 27 ௳" }
+
+    - date: 2026-07-19    # Adityahasta
+      en: { desc: "Adityahasta Amrita Siddhi Yoga Devi Parayanam",   tithi: "5128 Paraabhava ◆ Karkata 3" }
+      ta: { desc: "ஆதித்யஹஸ்த அம்ருத ஸித்தி யோக தேவீ பாராயணம்",        tithi: "5128 பராபவ ௵ ஆடி ௴ 3 ௳" }
+
+    - date: 2026-08-08    # Shanirohini
+      en: { desc: "Shanirohini Amrita Siddhi Yoga Devi Parayanam",   tithi: "5128 Paraabhava ◆ Karkata 23" }
+      ta: { desc: "ஶநிரோஹிணீ அம்ருத ஸித்தி யோக தேவீ பாராயணம்",         tithi: "5128 பராபவ ௵ ஆடி ௴ 23 ௳" }
+
+    - date: 2026-08-16    # Adityahasta
+      en: { desc: "Adityahasta Amrita Siddhi Yoga Devi Parayanam",   tithi: "5128 Paraabhava ◆ Karkata 31" }
+      ta: { desc: "ஆதித்யஹஸ்த அம்ருத ஸித்தி யோக தேவீ பாராயணம்",        tithi: "5128 பராபவ ௵ ஆடி ௴ 31 ௳" }
+
+    - date: 2026-09-01    # Bhaumashvini
+      en: { desc: "Bhaumashvini Amrita Siddhi Yoga Devi Parayanam",  tithi: "5128 Paraabhava ◆ Simha 16" }
+      ta: { desc: "பௌமாஶ்விநீ அம்ருத ஸித்தி யோக தேவீ பாராயணம்",         tithi: "5128 பராபவ ௵ ஆவணி ௴ 16 ௳" }
+
+    - date: 2026-09-13    # Adityahasta
+      en: { desc: "Adityahasta Amrita Siddhi Yoga Devi Parayanam",   tithi: "5128 Paraabhava ◆ Simha 28" }
+      ta: { desc: "ஆதித்யஹஸ்த அம்ருத ஸித்தி யோக தேவீ பாராயணம்",        tithi: "5128 பராபவ ௵ ஆவணி ௴ 28 ௳" }
+
+    - date: 2026-09-16    # Budhanuradha
+      en: { desc: "Budhanuradha Amrita Siddhi Yoga Devi Parayanam",  tithi: "5128 Paraabhava ◆ Simha 31" }
+      ta: { desc: "புதாநுராதா அம்ருத ஸித்தி யோக தேவீ பாராயணம்",          tithi: "5128 பராபவ ௵ ஆவணி ௴ 31 ௳" }
+
+    - date: 2026-09-29    # Bhaumashvini
+      en: { desc: "Bhaumashvini Amrita Siddhi Yoga Devi Parayanam",  tithi: "5128 Paraabhava ◆ Kanya 13" }
+      ta: { desc: "பௌமாஶ்விநீ அம்ருத ஸித்தி யோக தேவீ பாராயணம்",         tithi: "5128 பராபவ ௵ புரட்டாசி ௴ 13 ௳" }
+
+    - date: 2026-10-14    # Budhanuradha
+      en: { desc: "Budhanuradha Amrita Siddhi Yoga Devi Parayanam",  tithi: "5128 Paraabhava ◆ Kanya 28" }
+      ta: { desc: "புதாநுராதா அம்ருத ஸித்தி யோக தேவீ பாராயணம்",          tithi: "5128 பராபவ ௵ புரட்டாசி ௴ 28 ௳" }
+
+    - date: 2026-10-19    # Somashravana
+      en: { desc: "Somashravana Amrita Siddhi Yoga Devi Parayanam",  tithi: "5128 Paraabhava ◆ Tula 2" }
+      ta: { desc: "ஸோமஶ்ரவண அம்ருத ஸித்தி யோக தேவீ பாராயணம்",           tithi: "5128 பராபவ ௵ ஐப்பசி ௴ 2 ௳" }
+
+    - date: 2026-11-11    # Budhanuradha
+      en: { desc: "Budhanuradha Amrita Siddhi Yoga Devi Parayanam",  tithi: "5128 Paraabhava ◆ Tula 25" }
+      ta: { desc: "புதாநுராதா அம்ருத ஸித்தி யோக தேவீ பாராயணம்",          tithi: "5128 பராபவ ௵ ஐப்பசி ௴ 25 ௳" }
+
+    - date: 2026-11-16    # Somashravana
+      en: { desc: "Somashravana Amrita Siddhi Yoga Devi Parayanam",  tithi: "5128 Paraabhava ◆ Tula 30" }
+      ta: { desc: "ஸோமஶ்ரவண அம்ருத ஸித்தி யோக தேவீ பாராயணம்",           tithi: "5128 பராபவ ௵ ஐப்பசி ௴ 30 ௳" }
+
+    - date: 2026-12-14    # Somashravana
+      en: { desc: "Somashravana Amrita Siddhi Yoga Devi Parayanam",  tithi: "5128 Paraabhava ◆ Vrishchika 28" }
+      ta: { desc: "ஸோமஶ்ரவண அம்ருத ஸித்தி யோக தேவீ பாராயணம்",           tithi: "5128 பராபவ ௵ கார்த்திகை ௴ 28 ௳" }
+
+    - date: 2026-12-18    # Bhrigurevati
+      en: { desc: "Bhrigurevati Amrita Siddhi Yoga Devi Parayanam",  tithi: "5128 Paraabhava ◆ Dhanus 3" }
+      ta: { desc: "ப்ருகுரேவதீ அம்ருத ஸித்தி யோக தேவீ பாராயணம்",         tithi: "5128 பராபவ ௵ மார்கழி ௴ 3 ௳" }
+
+    - date: 2027-01-15    # Bhrigurevati
+      en: { desc: "Bhrigurevati Amrita Siddhi Yoga Devi Parayanam",  tithi: "5128 Paraabhava ◆ Makara 1" }
+      ta: { desc: "ப்ருகுரேவதீ அம்ருத ஸித்தி யோக தேவீ பாராயணம்",         tithi: "5128 பராபவ ௵ தை ௴ 1 ௳" }
+
+    - date: 2027-02-18    # Gurupushya
+      en: { desc: "Gurupushya Amrita Siddhi Yoga Devi Parayanam",    tithi: "5128 Paraabhava ◆ Kumbha 6" }
+      ta: { desc: "குருபுஷ்ய அம்ருத ஸித்தி யோக தேவீ பாராயணம்",           tithi: "5128 பராபவ ௵ மாசி ௴ 6 ௳" }
+
+    - date: 2027-03-15    # Somamrigashirsha
+      en: { desc: "Somamrigashirsha Amrita Siddhi Yoga Devi Parayanam", tithi: "5128 Paraabhava ◆ Meena 1" }
+      ta: { desc: "ஸோமம்ருகஶீர்ஷ அம்ருத ஸித்தி யோக தேவீ பாராயணம்",       tithi: "5128 பராபவ ௵ பங்குனி ௴ 1 ௳" }
+
+    - date: 2027-03-18    # Gurupushya
+      en: { desc: "Gurupushya Amrita Siddhi Yoga Devi Parayanam",    tithi: "5128 Paraabhava ◆ Meena 4" }
+      ta: { desc: "குருபுஷ்ய அம்ருத ஸித்தி யோக தேவீ பாராயணம்",           tithi: "5128 பராபவ ௵ பங்குனி ௴ 4 ௳" }
+
+    - date: 2027-04-10    # Shanirohini
+      en: { desc: "Shanirohini Amrita Siddhi Yoga Devi Parayanam",   tithi: "5128 Paraabhava ◆ Meena 27" }
+      ta: { desc: "ஶநிரோஹிணீ அம்ருத ஸித்தி யோக தேவீ பாராயணம்",         tithi: "5128 பராபவ ௵ பங்குனி ௴ 27 ௳" }
+
+    - date: 2027-04-12    # Somamrigashirsha
+      en: { desc: "Somamrigashirsha Amrita Siddhi Yoga Devi Parayanam", tithi: "5128 Paraabhava ◆ Meena 29" }
+      ta: { desc: "ஸோமம்ருகஶீர்ஷ அம்ருத ஸித்தி யோக தேவீ பாராயணம்",       tithi: "5128 பராபவ ௵ பங்குனி ௴ 29 ௳" }
+
+    # ---- Plavanga 5129 (samvatsara transition: 2027-Apr-14) ----
+
+    - date: 2027-04-15    # Gurupushya
+      en: { desc: "Gurupushya Amrita Siddhi Yoga Devi Parayanam",    tithi: "5129 Plavanga ◆ Mesha 2" }
+      ta: { desc: "குருபுஷ்ய அம்ருத ஸித்தி யோக தேவீ பாராயணம்",           tithi: "5129 ப்லவங்க ௵ சித்திரை ௴ 2 ௳" }
