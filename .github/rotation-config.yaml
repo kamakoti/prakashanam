@@ -29,9 +29,9 @@
 #   Boundary: solar Mesha Sankranti (Chittirai 1).
 
 AmritaSiddhi:
-  parent: VDSP
-  banner: vdsp
-  folder_path: AmritaSiddhi
+  parent: Kamakoti
+  banner: kamakoti
+  folder_path: Kamakoti/AmritaSiddhi
   occurrences:
 
     # ---- Paraabhava 5128 ----
