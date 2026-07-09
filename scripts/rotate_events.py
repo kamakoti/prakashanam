@@ -3,32 +3,25 @@
 Keep AmritaSiddhi/ pointing at the next upcoming occurrence.
 
 Driven by .github/rotation-config.yaml, which is the source-of-truth master
-table of all occurrences (past + future). The workflow only manages the
-current-event alias — archived AmritaSiddhi-<date>/ folders are never
-touched by this script.
+table of all occurrences (past + future).
 
 Daily behaviour (04:00 IST):
-  - Determine `target` = earliest occurrence with date >= today.
+  - Determine target = earliest occurrence with date >= today.
   - Read AmritaSiddhi/index.md's current date.
-  - If they already match: no-op.
-  - Otherwise:
-      1. If AmritaSiddhi/ exists AND its date < today AND
-         AmritaSiddhi-<that-date>/ does not already exist:
-             rename AmritaSiddhi/ -> AmritaSiddhi-<that-date>/  (archive)
-      2. Materialise the new AmritaSiddhi/ from `target`:
-             mkdir AmritaSiddhi/
-             write index.md (English + Tamil front matter)
-             copy README.md from most-recent archived AmritaSiddhi-*/
-  - Config file is NEVER modified (source of truth is user-maintained).
+  - If current date is past and != target:
+      1. Create fresh AmritaSiddhi-<current-date>/ folder.
+      2. Copy index.md, README.md, cover.jpg from AmritaSiddhi/ into it.
+      3. Overwrite AmritaSiddhi/index.md with the new event's front matter.
+  - PDFs and any other files inside AmritaSiddhi/ stay untouched — they
+    are constant across events and only live in the current folder.
+  - README.md and cover.jpg are ALSO constant, but get duplicated into
+    archives so the archive pages still render correctly.
 
-Notes:
-  - cover.jpg is NOT copied — drop a fresh one manually.
-  - New folders start with draft: true.
+Config file is NEVER modified — source of truth is user-maintained.
 """
 
 from __future__ import annotations
 
-import re
 import shutil
 import sys
 from datetime import date, datetime, timedelta, timezone
@@ -40,14 +33,16 @@ REPO_ROOT   = Path(__file__).resolve().parent.parent
 CONFIG_PATH = REPO_ROOT / ".github" / "rotation-config.yaml"
 IST         = timezone(timedelta(hours=5, minutes=30))
 
+# Files copied from AmritaSiddhi/ into the archive on rotation.
+# Files NOT in this list (PDFs, any other assets) stay put in AmritaSiddhi/.
+ARCHIVED_FILES = ("index.md", "README.md", "cover.jpg")
+
 # Gregorian month names in Tamil script
 TAMIL_MONTHS = {
     1: "ஜனவரி",   2: "பிப்ரவரி",  3: "மார்ச்",   4: "ஏப்ரல்",
     5: "மே",       6: "ஜூன்",      7: "ஜூலை",     8: "ஆகஸ்ட்",
     9: "செப்டம்பர்", 10: "அக்டோபர்", 11: "நவம்பர்", 12: "டிசம்பர்",
 }
-
-DATE_SUFFIX_RE = re.compile(r"-(\d{4}-\d{2}-\d{2})$")
 
 
 # ---- Helpers ---------------------------------------------------------------
@@ -87,27 +82,6 @@ def english_date(d: date) -> str:
 
 def tamil_date(d: date) -> str:
     return f"{d.year}-{TAMIL_MONTHS[d.month]}-{d.day}"
-
-
-def find_most_recent_archive(parent_dir: Path, leaf: str) -> Path | None:
-    """Return the AmritaSiddhi-YYYY-MM-DD folder with the latest date, or None."""
-    prefix = f"{leaf}-"
-    candidates = []
-    for child in parent_dir.iterdir():
-        if not child.is_dir() or not child.name.startswith(prefix):
-            continue
-        m = DATE_SUFFIX_RE.search(child.name)
-        if not m:
-            continue
-        try:
-            d = datetime.strptime(m.group(1), "%Y-%m-%d").date()
-        except ValueError:
-            continue
-        candidates.append((d, child))
-    if not candidates:
-        return None
-    candidates.sort(key=lambda t: t[0], reverse=True)
-    return candidates[0][1]
 
 
 # ---- index.md generator ----------------------------------------------------
@@ -155,7 +129,6 @@ def load_config() -> dict:
 
 
 def pick_target(occurrences: list, today: date) -> tuple[dict, date] | None:
-    """Return (entry, event_date) for earliest occurrence with date >= today."""
     upcoming = []
     for e in occurrences:
         d = coerce_date(e.get("date"))
@@ -179,6 +152,8 @@ def main() -> int:
     if not cfg:
         return 0
 
+    exit_code = 0
+
     for name, folder_cfg in cfg.items():
         rel_path      = folder_cfg.get("folder_path", name)
         leaf          = rel_path.rsplit("/", 1)[-1]
@@ -189,68 +164,68 @@ def main() -> int:
 
         target = pick_target(occurrences, today)
         if target is None:
-            print(f"  {name}: no upcoming occurrences (today or later); skipping")
+            print(f"  {name}: no upcoming occurrences; skipping")
             continue
         target_entry, target_date = target
 
-        # Read current folder's date, if it exists.
-        current_date = None
-        if index_path.exists():
-            fm = parse_front_matter(index_path)
-            if fm and "date" in fm:
-                current_date = coerce_date(fm["date"])
+        if not index_path.exists():
+            print(f"  {name}: {index_path} missing; skipping")
+            continue
+
+        fm = parse_front_matter(index_path)
+        if not fm or "date" not in fm:
+            print(f"  {name}: no parseable date in front matter; skipping")
+            continue
+
+        current_date = coerce_date(fm["date"])
+        if current_date is None:
+            print(f"  {name}: unparseable date {fm['date']!r}; skipping")
+            continue
 
         if current_date == target_date:
             print(f"  {name}: already at {target_date}; no change")
             continue
 
+        if current_date >= today:
+            print(f"  {name}: current date {current_date} is not yet past; "
+                  f"refusing to rotate (config may have been edited)")
+            continue
+
+        # Current is past AND != target. Rotate.
+        archive_path = parent_dir / f"{leaf}-{current_date.isoformat()}"
+        if archive_path.exists():
+            print(f"  {name}: archive {archive_path.name} already exists; "
+                  f"skipping to avoid clobber (manual intervention needed)")
+            exit_code = 1
+            continue
+
         print(f"  {name}: current={current_date}, target={target_date}")
+        print(f"  {name}: creating archive {archive_path.name}")
+        archive_path.mkdir(parents=True)
 
-        # If the current folder exists AND its date is past, archive it.
-        # If its date is future (edge case: config edited to introduce an earlier
-        # event ahead of the current one), we don't archive under a future date;
-        # we'd overwrite it, which is destructive — skip and warn.
-        if folder_path.exists():
-            if current_date is None:
-                print(f"  {name}: current folder has no parseable date; "
-                      f"refusing to touch it")
-                continue
-            if current_date >= today:
-                print(f"  {name}: current folder's date {current_date} is not "
-                      f"yet past; refusing to archive (config may have been "
-                      f"edited to introduce an earlier occurrence)")
-                continue
+        # Copy the standard files. Any file missing from source is a WARNING
+        # but does not abort — the source file being missing was already a
+        # site-rendering issue that the user needs to fix separately.
+        for filename in ARCHIVED_FILES:
+            src = folder_path / filename
+            if src.exists():
+                shutil.copy2(src, archive_path / filename)
+                print(f"  {name}: copied {filename} -> {archive_path.name}/")
+            else:
+                print(f"  {name}: WARNING - {filename} missing from "
+                      f"{folder_path.name}/; archive will lack it too",
+                      file=sys.stderr)
 
-            archive_path = parent_dir / f"{leaf}-{current_date.isoformat()}"
-            if archive_path.exists():
-                print(f"  {name}: archive {archive_path.name} already exists; "
-                      f"skipping to avoid clobber")
-                continue
-            print(f"  {name}: archiving -> {archive_path.name}")
-            folder_path.rename(archive_path)
-
-        # Materialise the target as the new current folder.
-        folder_path.mkdir(parents=True, exist_ok=False)
-        (folder_path / "index.md").write_text(
+        # Overwrite the current index.md with the new event's front matter.
+        # README.md, cover.jpg, PDFs and everything else in AmritaSiddhi/
+        # remain untouched — they're constant across events.
+        index_path.write_text(
             make_index_md(leaf, folder_cfg, target_entry, target_date),
             encoding="utf-8",
         )
-        print(f"  {name}: new index.md written for {target_date}")
+        print(f"  {name}: index.md updated for {target_date}")
 
-        # Copy README.md and cover.jpg from most recent archive.
-        recent_archive = find_most_recent_archive(parent_dir, leaf)
-        if recent_archive is not None:
-            for filename in ("README.md", "cover.jpg"):
-                src = recent_archive / filename
-                if src.exists():
-                    shutil.copy2(src, folder_path / filename)
-                    print(f"  {name}: {filename} copied from {recent_archive.name}")
-                else:
-                    print(f"  {name}: WARNING - no {filename} in {recent_archive.name}")
-        else:
-            print(f"  {name}: WARNING - no archived folder to copy assets from")
-
-    return 0
+    return exit_code
 
 
 if __name__ == "__main__":
