@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2026-07-11'
+date: 2026-07-11
 parent: Kamakoti
 folder: AmritaSiddhi
 simple_title: Shanirohini Amrita Siddhi Yoga Devi Parayanam

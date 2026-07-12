@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2026-07-19'
+date: 2026-07-19
 parent: Kamakoti
 folder: AmritaSiddhi
 simple_title: Adityahasta Amrita Siddhi Yoga Devi Parayanam
