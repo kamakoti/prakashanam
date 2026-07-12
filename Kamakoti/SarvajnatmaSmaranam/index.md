@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Shri Sarvajnatma Smaranam
 date: 2026-05-15
 parent: Kamakoti
 folder: SarvajnatmaSmaranam

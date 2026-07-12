@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Amrita Siddhi Yoga Devi Parayanam (Guru-Pushya)
 date: 2026-04-23
 parent: Kamakoti
 folder: AmritaSiddhi

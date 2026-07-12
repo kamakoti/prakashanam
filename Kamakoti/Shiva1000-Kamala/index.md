@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Shiva Sahasranama (Vishnu Krta)
 date: 2026-02-15
 parent: Kamakoti
 folder: Shiva1000-Kamala

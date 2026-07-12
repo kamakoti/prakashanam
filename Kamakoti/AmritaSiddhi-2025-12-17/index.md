@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Amrita Siddhi Yoga Devi Parayanam
 date: 2025-12-17
 parent: Kamakoti
 folder: AmritaSiddhi

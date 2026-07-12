@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Shri Sureshvara Smaranam
 date: 2026-06-26
 parent: Kamakoti
 folder: SureshvaraSmaranam

@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Mrityunjaya Manasa Puja Stotram
 date: 2026-02-15
 parent: Kamakoti
 folder: MrityunjayaManasaPuja

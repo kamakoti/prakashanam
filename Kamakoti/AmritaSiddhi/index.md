@@ -2,7 +2,6 @@
 layout: post
 date: '2026-07-19'
 parent: Kamakoti
-draft: true
 folder: AmritaSiddhi
 simple_title: Adityahasta Amrita Siddhi Yoga Devi Parayanam
 banner: kamakoti

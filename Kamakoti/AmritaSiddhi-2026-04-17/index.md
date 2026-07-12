@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Amrita Siddhi Yoga Devi Parayanam (Bhrigu-Revati)
 date: 2026-04-17
 parent: Kamakoti
 folder: AmritaSiddhi

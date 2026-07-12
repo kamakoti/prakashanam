@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Amrita Siddhi Yoga Devi Parayanam (Soma-Shravana)
 date: 2026-02-16
 parent: Kamakoti
 folder: AmritaSiddhi

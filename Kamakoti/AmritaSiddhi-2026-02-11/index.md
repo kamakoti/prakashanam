@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Amrita Siddhi Yoga Devi Parayanam (Budha-Anuradha)
 date: 2026-02-11
 parent: Kamakoti
 folder: AmritaSiddhi
