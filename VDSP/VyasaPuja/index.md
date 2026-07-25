@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Chaturmasyam"
-date: 2026-09-26
+title: "Vyasa Puja"
+date: 2026-07-29
 parent: VDSP
-folder: Chaturmasyam
-simple_title: "Chaturmasyam"
+folder: VyasaPuja
+simple_title: "Vyasa Puja"
 banner: vdsp
 title:
   en:
-    desc: "Specialities of Chaturmasya"
-    tithi: "5128 Paraabhava ◆ Karkata 13—Kanya 10"
-    date: "2026-Jul-29 – 2026-Sep-26"
+    desc: "Vyasa Puja"
+    tithi: "5128 Paraabhava ◆ Karkataka 13"
+    date: "2026-Jul-29"
   ta:
-    desc: "சாதுர்மாஸ்யத்தின் சிறப்புகள்"
-    tithi: "5128 பராபவ ௵ ஆடி ௴ 13 ௳–புரட்டாசி ௴ 10 ௳"
-    date: "2026-ஜூலை-29 – 2026-ஸெப்-26"
+    desc: "வ்யாஸ பூஜை"
+    tithi: "5128 பராபவ ௵ ஆடி ௴ 13 ௳"
+    date: "2026-ஜூலை-29"
 ---
