@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2026-08-08'
+date: 2026-08-08
 parent: Kamakoti
 draft: true
 folder: AmritaSiddhi

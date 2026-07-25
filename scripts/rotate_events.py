@@ -95,7 +95,7 @@ def make_index_md(leaf: str, folder_cfg: dict, entry: dict, event_date: date) ->
 
     fm = {
         "layout":       "post",
-        "date":         event_date.isoformat(),
+        "date":         event_date,           # native date -> YAML emits unquoted
         "parent":       parent,
         "draft":        True,
         "folder":       leaf,
