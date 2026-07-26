@@ -12,26 +12,20 @@ layout: null
   <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
   <generator>Jekyll</generator>
 
-  {% assign now_ts = site.time | date: "%s" | plus: 0 %}
-
   {% comment %} Same discovery logic as index.md: pages tagged with a known parent. {% endcomment %}
   {% assign kam_pages = site.pages | where: "parent", "Kamakoti" %}
   {% assign vdsp_pages = site.pages | where: "parent", "VDSP" %}
   {% assign all_pages = kam_pages | concat: vdsp_pages %}
 
-  {% comment %} Only items that have already occurred belong in the feed. {% endcomment %}
-  {% assign published_list = "" | split: "" %}
+  {% assign dated_pages = "" | split: "" %}
   {% for p in all_pages %}
     {% if p.date %}
-      {% assign p_ts = p.date | date: "%s" | plus: 0 %}
-      {% if p_ts < now_ts %}
-        {% assign published_list = published_list | push: p %}
-      {% endif %}
+      {% assign dated_pages = dated_pages | push: p %}
     {% endif %}
   {% endfor %}
-  {% assign published_sorted = published_list | sort: "date" | reverse %}
+  {% assign all_sorted = dated_pages | sort: "date" | reverse %}
 
-  {% for p in published_sorted limit: 20 %}
+  {% for p in all_sorted %}
   <item>
     <title>{{ p.simple_title | default: p.title.en.desc | xml_escape }}</title>
     <description>{{ p.title.en.desc | default: p.simple_title | xml_escape }}</description>
