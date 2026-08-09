@@ -4,6 +4,7 @@ title: Yama Tarpanam (Krishna Angaraka Chaturdashi)
 date: 2026-03-17
 parent: VDSP
 folder: YamaTarpanam-2026-03-17
+slug: YamaTarpanam
 simple_title: "Yama Tarpanam (Krishna Angaraka Chaturdashi)"
 banner: vdsp
 title:
