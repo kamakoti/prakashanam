@@ -1,18 +1,18 @@
 ---
 layout: post
-date: 2026-08-16
+date: 2026-09-01
 parent: Kamakoti
 draft: true
 folder: AmritaSiddhi
-simple_title: Adityahasta Amrita Siddhi Yoga Devi Parayanam
+simple_title: Bhaumashvini Amrita Siddhi Yoga Devi Parayanam
 banner: kamakoti
 title:
   en:
-    desc: Adityahasta Amrita Siddhi Yoga Devi Parayanam
-    tithi: 5128 Paraabhava ◆ Karkata 31
-    date: 2026-Aug-16
+    desc: Bhaumashvini Amrita Siddhi Yoga Devi Parayanam
+    tithi: 5128 Paraabhava ◆ Simha 16
+    date: 2026-Sep-01
   ta:
-    desc: ஆதித்யஹஸ்த அம்ருத ஸித்தி யோக தேவீ பாராயணம்
-    tithi: 5128 பராபவ ௵ ஆடி ௴ 31 ௳
-    date: 2026-ஆகஸ்ட்-16
+    desc: பௌமாஶ்விநீ அம்ருத ஸித்தி யோக தேவீ பாராயணம்
+    tithi: 5128 பராபவ ௵ ஆவணி ௴ 16 ௳
+    date: 2026-செப்டம்பர்-1
 ---
