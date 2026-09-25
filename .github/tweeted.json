@@ -40,6 +40,11 @@
       "event_date": "2026-09-16",
       "queued_at": "2026-09-15T01:44:37+00:00"
     },
+    "Kamakoti/BodhendraSmaranam@2026-09-26": {
+      "calendar_event": "8ik5p30vcosichud4llinf0krg",
+      "event_date": "2026-09-26",
+      "queued_at": "2026-09-25T01:44:33+00:00"
+    },
     "Kamakoti/ParamashivendraSmaranam@2026-08-22": {
       "calendar_event": "68sutoq02620e0kffvop3rhudc",
       "event_date": "2026-08-22",
@@ -49,6 +54,11 @@
       "calendar_event": "0vnh8f5d96fa9l8rm9v8dlsklg",
       "event_date": "2026-05-15",
       "queued_at": "2026-05-14T01:25:40+00:00"
+    },
+    "VDSP/Chaturmasyam@2026-09-26": {
+      "calendar_event": "45s0els7d56hn3lrpkihac6cko",
+      "event_date": "2026-09-26",
+      "queued_at": "2026-09-25T01:44:32+00:00"
     },
     "VDSP/IlaiyaPeriyavaJayanti@2026-05-11": {
       "calendar_event": "guslt054ni4qjli6s618bie32g",
@@ -84,6 +94,11 @@
       "calendar_event": "vv14m29opis2mrcnvve7vu6om4",
       "event_date": "2026-09-14",
       "queued_at": "2026-09-13T01:18:47+00:00"
+    },
+    "VDSP/VishvarupaYatra@2026-09-26": {
+      "calendar_event": "b3c179bg6u8ft0fg4afdf914b0",
+      "event_date": "2026-09-26",
+      "queued_at": "2026-09-25T01:44:32+00:00"
     },
     "VDSP/VyasaPuja@2026-07-29": {
       "calendar_event": "714e8kp92pp0ppof6gv0uvicbo",
